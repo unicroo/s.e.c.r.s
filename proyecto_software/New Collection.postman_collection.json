@@ -1,0 +1,312 @@
+{
+	"info": {
+		"_postman_id": "32b0404d-2518-4932-ad8c-98619d4276e7",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18380910",
+		"_collection_link": "https://www.postman.com/crimson-comet-876818/workspace/api/collection/18380910-32b0404d-2518-4932-ad8c-98619d4276e7?action=share&creator=18380910&source=collection_link"
+	},
+	"item": [
+		{
+			"name": " http://localhost:3000/users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"contenido\":{\r\n        \"t_cont\" : \"infografia\",\r\n        \"tema\" : \"Los conceptos\",\r\n        \"id_users\" : \"64a767a9de7ca5e2483782ce\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/contenido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contenido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"contenido\":{\r\n        \"t_cont\" : \"Conceptos\",\r\n        \"tema\" : \"clasificación de los residuos \",\r\n        \"id_users\" : \"64a76accde7ca5e2483782eb\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/contenido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contenido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"contenido\":{\r\n        \"t_cont\" : \"video\",\r\n        \"tema\" : \"residuos\",\r\n        \"id_users\" : \"64a76994de7ca5e2483782d9\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/contenido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contenido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"actividades\":{\r\n        \"t_cont\" : \"arrastrar y soltar\",\r\n        \"tema\" : \"Conceptos\",\r\n        \"id_users\" : \"64a76a9fde7ca5e2483782e6\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/actividades",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"actividades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/actividades",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"evaluacion\":{\r\n        \"nota\": \"2\",\r\n        \"time\": \"3h\",\r\n        \"id_contenido\": \"64a76aedde7ca5e2483782ee\",\r\n        \"id_actividades\": \"64a76accde7ca5e2483782eb\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/evaluacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"evaluacion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/evaluacion",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tema_eval\":{\r\n        \"cod_contenido\": \"64a76a21de7ca5e2483782e1\",\r\n        \"cod_evaluacion\": \"64a771c344f7ff339ac9a952\",\r\n        \"cod_actividades\": \"64a769fade7ca5e2483782de\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/tema_eval",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tema_eval"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/tema_eval",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"t_tusuario\":{\r\n      \"nom\": \"camilo\",\r\n         \"cargo\": \"Estudiante\",\r\n        \"id_user\": \"64a76accde7ca5e2483782eb\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/t_tusuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"t_tusuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/contenido",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"contenido\":{\r\n        \"t_cont\" : \"infografia\",\r\n        \"tema\" : \"Los conceptos\",\r\n        \"id_users\" : \"64a767a9de7ca5e2483782ce\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/contenido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contenido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/contenido",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"contenido\":{\r\n{\r\n            \"t_cont\": \"infografia\",\r\n            \"tema\": \"Clasificacion de los residuos\",\r\n            \"id_users\": \"64a76994de7ca5e2483782d9\"\r\n}\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/contenido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contenido"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
